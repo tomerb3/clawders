@@ -9,23 +9,17 @@
    check 'main.go' file 
 
    also I wanted to run it as docker and not : ' go run .'
+
    so you will also see Dockerfile, dockerbuild and dockerrun
 
 4. put these files inside the clone repository
 
 5. make sure you ran the docker run of proxy in the background...
+
     then run these commands 
 
-export ANTHROPIC_BASE_URL=http://localhost:3001
+6.  after you put your token inside run-claude and choose AI model
 
-export ANTHROPIC_AUTH_TOKEN="your-nvidia-token"
+    you can run :
 
-export ANTHROPIC_DEFAULT_HAIKU_MODEL=qwen/qwen2.5-coder-32b-instruct
-
-export ANTHROPIC_DEFAULT_SONNET_MODEL=qwen/qwen2.5-coder-32b-instruct
-
-export ANTHROPIC_DEFAULT_OPUS_MODEL=qwen/qwen2.5-coder-32b-instruct
-
-export DISABLE_TOOLS=true
-
-claude
+   ./run-claude 
