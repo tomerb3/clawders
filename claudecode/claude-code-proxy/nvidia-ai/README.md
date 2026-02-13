@@ -1,14 +1,12 @@
 1. create free AI token in NVIDIA website
 
 2. clone this repository 
-https://github.com/zhangrr/claude-nvidia-proxy
+   https://github.com/zhangrr/claude-nvidia-proxy
 
-3. and i did some changes - after things did not work like I planed 
- check main.go file here
+3. I did some changes to fix some problems 
+   check 'main.go' file 
 
-also I wanted to run it as docker run command and not
-  go run .
+   also I wanted to run it as docker and not : ' go run .'
+   so you will also see Dockerfile, dockerbuild and dockerrun
 
-you will see the files I changed here, docker build command and docker run command
-
-4. put this files inside the clone repository
+4. put these files inside the clone repository
