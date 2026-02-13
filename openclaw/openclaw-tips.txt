@@ -12,7 +12,10 @@ Easyclaw
 Easy way to install openclaw
 ==============================================================
 
+openclaw prompts : 
 
+https://gist.github.com/mberman84/065631c62d6d8f30ecb14748c00fc6d9
 
+==============================================================
 
 
