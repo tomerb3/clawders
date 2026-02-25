@@ -1,6 +1,7 @@
 # 🦞 Clawders
 
 **The community guide to running OpenClaw securely, affordably, and efficiently**
+https://www.star-history.com/#tomerb3/clawders&type=date&legend=top-left
 
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-2026.1.30+-orange)](https://openclaw.ai)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
