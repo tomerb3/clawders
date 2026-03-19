@@ -48,3 +48,16 @@ to continue work on your claude code home terminal from your phone
 
 install https://happy.engineering
 
+===========================
+
+Get Shit Done - Meta-prompting framework.
+
+https://github.com/gsd-build/get-shit-done
+
+npx get-shit-done-cc@latest
+
+then 
+
+claude --dangerously-skip-permissions
+
+=========================================

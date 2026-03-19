@@ -3,5 +3,5 @@
 2. please install sequential thinking mcp server
 
  then after you restart claude code, you superpower plugin also will use sequential thinking
-
+ this will run only in the folder you created it. so for any project you need to ask this 
  
