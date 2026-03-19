@@ -1,0 +1,50 @@
+
+in your ~/.zshrc or ~/.bashrc add the following:
+
+```bash
+alias cc="claude --dangerously-skip-permissions $@"  
+```
+
+then when it start you can switch modes:  plan / accept edits on / bypass permissions on  
+
+if you are new to claude code. do not use the flag   --dangerously-skip-permissions
+
+youtube links that can help you understand more claude code : 
+
+https://www.youtube.com/watch?v=TiNpzxoBPz0&t=360s
+
+https://www.youtube.com/watch?v=-O6MEtleOdA
+
+https://www.youtube.com/watch?v=rVEoyx349Hk
+
+
+==== to add bottom status lines ====
+
+in your terminal type: npx ccstatusline@latest
+
+2 lines reccomendation: 
+
+first line: Model
+            Seperator
+            Context %   ( most importent information )
+            Seperator
+            Session Cost
+            Seperator
+            Session Clock
+
+second line: Git branch 
+             Separator
+             Git Worktree
+
+====================================
+
+install warp terminal from WARP.DEV 
+  it will help you navigate files also in the left area 
+  for example to see the superpower plans..
+
+===================================
+
+to continue work on your claude code home terminal from your phone
+
+install https://happy.engineering
+
