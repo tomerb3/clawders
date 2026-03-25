@@ -61,3 +61,9 @@ then
 claude --dangerously-skip-permissions
 
 =========================================
+
+how to connect to CLI tools that make claude code unstoppable
+
+https://www.youtube.com/watch?v=uULvhQrKB_c
+
+======================================================
