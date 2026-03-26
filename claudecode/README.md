@@ -66,4 +66,8 @@ how to connect to CLI tools that make claude code unstoppable
 
 https://www.youtube.com/watch?v=uULvhQrKB_c
 
+need to check browser cli: vercel browser automation vs playright cli - and need to check if this working in wsl2 ubuntu 
+
+https://github.com/microsoft/playwright-cli
+
 ======================================================
