@@ -1,4 +1,4 @@
 {
   "nvidia_url": "https://integrate.api.nvidia.com/v1/chat/completions",
-  "nvidia_key": "nvapi-... < your free AI token >"
+  "nvidia_key": "${NVIDIA_API_KEY}"
 }

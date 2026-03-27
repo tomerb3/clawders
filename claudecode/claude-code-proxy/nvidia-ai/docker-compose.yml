@@ -1,0 +1,26 @@
+services:
+  nvidia-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: claude-nvidia-proxy:latest
+    container_name: claude-nvidia-proxy
+    ports:
+      - "3001:3001"
+    environment:
+      - ADDR=:3001
+      - CONFIG_PATH=/app/config.json
+      # Override these with your actual values or use .env file
+      - UPSTREAM_URL=https://integrate.api.nvidia.com/v1/chat/completions
+      - PROVIDER_API_KEY=${NVIDIA_API_KEY:-}
+      - SERVER_API_KEY=${SERVER_API_KEY:-}
+      - UPSTREAM_TIMEOUT_SECONDS=300
+    volumes:
+      - ./config.json:/app/config.json:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3001/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

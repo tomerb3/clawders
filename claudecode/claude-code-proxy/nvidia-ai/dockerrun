@@ -1,9 +1,38 @@
-docker stop claude-code-go-proxy 
-docker rm claude-code-go-proxy 
+#!/bin/bash
+# Production-ready Docker run script for claude-nvidia-proxy
 
-docker run -d --name claude-code-go-proxy \
-  -p 3001:3001 \
-  -e ADDR=":3001" \
-  -e CONFIG_PATH="/app/config.json" \
-  -v "$PWD/config.json:/app/config.json:ro" \
-  claude-code-go-proxy
+set -e
+
+CONTAINER_NAME="claude-nvidia-proxy"
+IMAGE_NAME="claude-code-go-proxy"
+
+# Load environment variables from .env if it exists
+if [ -f .env ]; then
+    echo "Loading environment from .env file..."
+    set -a
+    source .env
+    set +a
+fi
+
+# Stop and remove existing container
+docker stop "$CONTAINER_NAME" 2>/dev/null || true
+docker rm "$CONTAINER_NAME" 2>/dev/null || true
+
+# Run the container
+docker run -d \
+    --name "$CONTAINER_NAME" \
+    -p 3001:3001 \
+    -e ADDR=":3001" \
+    -e CONFIG_PATH="/app/config.json" \
+    -e PROVIDER_API_KEY \
+    -e SERVER_API_KEY \
+    -e UPSTREAM_TIMEOUT_SECONDS=300 \
+    -v "$PWD/config.json:/app/config.json:ro" \
+    --restart unless-stopped \
+    --health-cmd "wget -q --spider http://localhost:3001/" \
+    --health-interval=30s \
+    --health-retries=3 \
+    "$IMAGE_NAME"
+
+echo "Container '$CONTAINER_NAME' started on port 3001"
+docker logs "$CONTAINER_NAME"
