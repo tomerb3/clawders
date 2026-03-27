@@ -78,4 +78,8 @@ https://www.youtube.com/watch?v=pDoBe4qbFPE
 
 one of them is how to help claude code read files bigger then 2000 lines
 
+start write prompt ... then ctrl + S  to stash it.. then give him another prompt. after ENTER the stashed prompt return
+
 ============================================
+
+/insights  will create for you report.html  ~\.claude\usage-data\reports.html
