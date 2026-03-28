@@ -70,6 +70,9 @@ need to check browser cli: vercel browser automation vs playright cli - and need
 
 https://github.com/microsoft/playwright-cli
 
+
+https://www.youtube.com/watch?v=P7JrP57AxR0    claude code agent-browser (by vercel) 
+
 ======================================================
 
 claude code 21 hidden settings
@@ -83,3 +86,13 @@ start write prompt ... then ctrl + S  to stash it.. then give him another prompt
 ============================================
 
 /insights  will create for you report.html  ~\.claude\usage-data\reports.html
+
+/effort auto or low ...etc  how many tokens will use per task
+
+ create agents and claude team for these agents... they will know how to work together.
+
+make sure in settings.json :  "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+
+/simplify  simple my code
+
+
