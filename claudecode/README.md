@@ -184,3 +184,8 @@ claude code self improve https://www.youtube.com/watch?v=wQ0duoTeAAU
     https://github.com/Yeachan-Heo/oh-my-claudecode
 
 =======================================
+
+https://www.linkedin.com/feed/update/urn:li:activity:7446945416140619777/
+  let openclaw use claude code in remote control
+======================================
+
