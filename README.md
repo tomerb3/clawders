@@ -10,7 +10,7 @@
 
 ---
 
-## 🎯 What is Clawders?
+## 🎯 What is Clawders ?
 
 **Clawders** is a community-maintained guide for installing and running [OpenClaw](https://openclaw.ai) — securely, affordably, and with minimal friction.
 
