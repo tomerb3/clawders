@@ -151,7 +151,7 @@ bun create video    # creates a Remotion project
 ```
 
 📺 [Remotion x Claude Code Tutorial](https://www.youtube.com/watch?v=7OR-L0AySn8)
-
+   https://www.youtube.com/shorts/sWQMAl8uf90
 ---
 
 ## Workflows & Productivity

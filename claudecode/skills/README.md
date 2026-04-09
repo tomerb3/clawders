@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=2BFN2DtcQMw
+
 # 🛠️ Skills for Claude Code
 
 Skills are specialized instruction sets that give Claude Code expert-level capabilities in specific domains. Think of them as plug-and-play knowledge modules.

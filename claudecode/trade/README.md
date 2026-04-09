@@ -29,3 +29,8 @@ Tools and resources for using Claude Code in trading and financial analysis work
 ## ⚠️ Disclaimer
 
 > These resources are for educational and informational purposes only. This is not financial advice. Always do your own research before making any trading decisions.
+
+===============================
+Claude and Trade skill and MCP 
+https://www.youtube.com/watch?v=lH5wrfNwL3k
+===============================
