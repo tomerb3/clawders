@@ -129,6 +129,10 @@ Special thanks to:
 - **@SkylerMiao7** — one-command installer author
 - **Knostic team** — openclaw-shield security tooling
 
+https://www.youtube.com/watch?v=TTgQV21X0SQ
+  https://www.josean.com/posts/how-to-setup-wezterm-terminal
+
+
 ---
 
 <p align="center">
