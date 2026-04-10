@@ -79,6 +79,14 @@ Use the [DigitalOcean 1-Click Deploy](https://www.digitalocean.com/community/tut
 
 ---
 
+always ask openclaw to use Hermes Agent.
+
+
+
+
+
+
+
 ## External Links
 
 | Resource | Link |
