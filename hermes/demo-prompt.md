@@ -1,0 +1,1 @@
+Every morning at 9am, I want you to pull the top 5 hacker news stories, fetch the actual articles, summarize each one in 2-3 sentences, score them by relevance to AI and startups, generate an audio briefing of the top 3 ranked ones, and deliver it to me on Telegram with a text summary alongside the audio.
