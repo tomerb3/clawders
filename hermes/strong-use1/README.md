@@ -28,3 +28,5 @@ command -v browser-harness
 
 tell the hermes about this folder so he will create his skill. 
 
+
+go to https://news.ycombinator.com/show and grab the top 15 "Show HN" for each score, author, comment count, and the linked url. save as /tmp/show_hn.json. before you finish , contribute what you learned about scraping Hacker news to domain-skill ycombinator.com so the next agent working on this site doesnt start from scrach.
