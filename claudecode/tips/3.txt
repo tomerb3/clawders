@@ -1,0 +1,7 @@
+give claude code to see videos and sound
+
+https://www.youtube.com/watch?v=QZMljuD10sU
+
+/watch:watch youtube url
+
+https://github.com/bradautomates/claude-video

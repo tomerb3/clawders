@@ -1,3 +1,14 @@
+/plugin marketplace add forrestchang/andrej-karpathy-skills
+/plugin install andrej-karpathy-skills@karpathy-skills
+
+
+# relate to https://www.youtube.com/watch?v=EeYkZloXIww
+
+
+
+
+
+
 # 🎯 Plugins for Claude Code
 
 Plugins extend Claude Code with additional commands, integrations, and capabilities.

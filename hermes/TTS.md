@@ -1,0 +1,83 @@
+─ ⚕ Hermes ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+
+https://github.com/hexgrad/kokoro?tab=readme-ov-file
+
+https://huggingface.co/hexgrad/Kokoro-82M
+
+https://www.youtube.com/watch?v=Yk4PLI72sks
+
+
+Kokoro TTS - voices am_adam and af_nicole are the best
+
+
+
+
+
+
+
+     is asking about the TTS I used for the space-agent video and wants information for using it in other projects. Based on my memory, I used Kokoro TTS (specifically the hexgrad/Kokoro-82M model from HuggingFace) with voice af_bella at speed 0.8.
+
+    Let me share the key details about how I used it.
+    I used Kokoro TTS — specifically the hexgrad/Kokoro-82M model from HuggingFace. It's Apache-licensed, works fully offline, and sounds great.
+
+    Quick summary for your own projects:
+
+
+    Model: hexgrad/Kokoro-82M
+    Size: 82M parameters
+    License: Apache 2.0 (fully open, commercial use OK)
+     voices: many — af_bella is the default American female voice
+
+
+    Python usage:
+
+    python
+    from kokoro.pipeline import KPipeline
+    import numpy as np
+    import soundfile as sf
+
+    Load pipeline (language pack 'a' = American English)
+    pipe = KPipeline('a', repo_id='hexgrad/Kokoro-82M')
+
+    Generate audio
+    script = "Your text here."
+    results = list(pipe(script, voice='af_bella', speed=0.8))
+
+    Concatenate audio chunks
+    audio = np.concatenate([r.output.audio.detach().cpu().numpy() for r in results])
+    sf.write('output.wav', audio, 24000)  # Kokoro outputs 24kHz
+
+
+    Available voices (from the model):
+
+    | Voice ID | Description |
+    |---|---|
+    | af_bella | American female (default) |
+    | af_nicole | American female |
+    | af_sarah | American female |
+    | am_adam | American male |
+    | am_michael | American male |
+    | bf_emma | British female |
+    | bm_george | British male |
+    | + many more across languages |
+
+    Other useful parameters:
+
+    python
+    pipe(text,
+         voice='af_bella',   # voice choice
+         speed=0.8,          # 0.5 = slow, 1.0 = normal, 2.0 = fast
+         split_pattern=None)  # None = no auto-split, or '. ' for sentence splitting
+
+
+    Memory from my setup:
+    - Installed at: /home/baum/.local/lib/python3.10/site-packages/kokoro/
+    - Output sample rate: 24kHz
+    - Python 3.10 with PyTorch
+    - No API keys needed — runs fully offline
+
+    Also used in the video pipeline:
+    - FFmpeg to convert WAV → MP3/AAC for muxing
+    - Remotion renders video-only (no audio component), then FFmpeg mux
+
+    For your own Remotion video projects: render video with Remotion, generate TTS with Kokoro, mux with FFmpeg using -t 55.2 -c:v copy -c:a aac -b:a 192k.

@@ -1,5 +1,11 @@
 # 💻 Terminal Setup
 
+
+
+
+
+
+
 A guide to building a powerful, visually appealing terminal workflow for use with Claude Code and AI agents.
 
 ---
@@ -9,6 +15,7 @@ A guide to building a powerful, visually appealing terminal workflow for use wit
 | Tool | Purpose | Link |
 |------|---------|------|
 | **WezTerm** | GPU-accelerated cross-platform terminal emulator | [wezterm.org](https://wezterm.org) |
+     inside WezTerm I use Herdr ( AI Tmux for Agents)  https://herdr.dev/ https://www.youtube.com/watch?v=XoitaexiCi0
 | **Starship** | Minimal, blazing-fast shell prompt | [starship.rs](https://starship.rs) |
 | **Nerd Fonts** | Icon fonts for powerline-style prompts | [nerdfonts.com](https://www.nerdfonts.com) |
 | **eza** | Modern, colorful `ls` replacement | [eza.rocks](https://eza.rocks) |
