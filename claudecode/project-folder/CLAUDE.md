@@ -2,11 +2,11 @@
 
 ## Directory Structure
 - **Python Scripts:** All Python logic and source files MUST be placed in the `src/` directory.
-- **Automation:** The root directory should contain a `bus.sh` script for container management.
+- **Automation:** The root directory should contain a `run.sh` script for container management.
 - **Docker:** The root directory should contain a `Dockerfile` for containerization. the scripts and also the tests.
 
-## Build & Execution (bus.sh)
-Every task must include or update `bus.sh` with the following functionality:
+## Build & Execution (run.sh)
+Every task must include or update `run.sh` with the following functionality:
 - **Build:** `docker build -t project-image .`
 - **Run:** `docker run --rm project-image`
 - Use this script as the primary entry point for testing the containerized environment.
@@ -32,7 +32,7 @@ Determine the testing type based on the component:
 ### 3. Verification Plan
 Explicitly state:
 - **How** we are going to measure success (e.g., "All tests pass with >80% coverage").
-- **How** we are going to test it (e.g., "Run `bus.sh` to trigger the internal pytest suite").
+- **How** we are going to test it (e.g., "Run `run.sh` to trigger the internal pytest suite").
 - **how** if for example the project will create video... how the AI will check the quality if the result video.
           if the result is app website - how the AI will check the quality of the website and buttons...
 
@@ -41,4 +41,4 @@ Only after the above steps are confirmed, proceed to build the project files and
 
 ## Commands
 - **Test:** `docker run --rm -it docker-pytest:ver1 src/tests/`
-- **Container Control:** `./bus.sh`
+- **Container Control:** `./run.sh`
